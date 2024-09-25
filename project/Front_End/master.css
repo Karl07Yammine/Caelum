@@ -1,0 +1,41 @@
+#container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+}
+.slide {
+    display: block;
+    position: absolute;
+    height: 45rem !important;
+    width: 40rem !important;
+    background: rgba(105, 105, 105, 0.75);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    padding: 1rem;
+    text-align: center;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+html{
+    overflow: hidden;
+}
