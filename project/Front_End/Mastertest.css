@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/100/37/302/space-stars-the-universe-space-wallpaper-preview.jpg');
     background-position: center;
     height: 100vh;
     display: flex;
@@ -45,9 +44,8 @@ body {
 }
 
 #container img {
-    width: 100%;
+    width: 140%;
+    height: 140%;
+    object-fit: cover;
     height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
