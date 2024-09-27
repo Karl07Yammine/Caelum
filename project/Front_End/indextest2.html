@@ -10,16 +10,11 @@
 </head>
 
 <body>
-
-
   <div id="container">
-    <img src="https://img.freepik.com/free-photo/galaxy-wallpaper-warm-colors_23-2151769491.jpg?size=626&ext=jpg" />
+    <img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bm9ydGhlcm4lMjBsaWdodHN8ZW58MHx8MHx8fDA%3D" />
     <div class="slide one">
-        <div class="container2">
-            <h1>Nasa Space Apps</h1>
-            <button class="space-button" onclick="window.location.href='/system'">Welcome</button>
-<!--Hi Karl for some fucking reason the script always stopped working after I created a new div bas bel ekhir meshe el 7al :) -->
-        </div>
+      <h1>Nasa Space Apps</h1>
+      <button class="space-button" onclick="window.location.href='/system'">Welcome</button>
     </div>
   </div>
 
@@ -41,8 +36,8 @@
 
       gsap.to(target, { // Using GSAP for animations
         duration: 1,
-        x: (relX - containerWidth / 2) / containerWidth * movement,
-        y: (relY - containerHeight / 2) / containerHeight * movement
+        x: (relX - containerWidth / 2) / containerWidth * (movement/3),
+        y: (relY - containerHeight / 2) / containerHeight * (movement/3)
       });
     }
   </script> 
