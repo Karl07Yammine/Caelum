@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
   res.sendFile(indexPath);
 });
 
-app.get('/test', (req, res) => {
-  const indexPath = path.join(frontEndPath, 'indextest.html');
+app.get('/system', (req, res) => {
+  const indexPath = path.join(frontEndPath, 'system.html');
   res.sendFile(indexPath);
 });
 
