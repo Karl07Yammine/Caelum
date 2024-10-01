@@ -11,12 +11,12 @@ app.use(express.static(frontEndPath));
 
 // Define a route for the root
 app.get('/', (req, res) => {
-  const indexPath = path.join(frontEndPath, 'index.html');
+  const indexPath = path.join(frontEndPath, 'indextest2.html');
   res.sendFile(indexPath);
 });
 
 app.get('/test', (req, res) => {
-  const indexPath = path.join(frontEndPath, 'indextest2.html');
+  const indexPath = path.join(frontEndPath, 'index.html');
   res.sendFile(indexPath);
 });
 
