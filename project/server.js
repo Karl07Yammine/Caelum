@@ -11,8 +11,8 @@ app.use(express.static(frontEndPath));
 
 // Define a route for the root
 app.get('/', (req, res) => {
-  const indexPath = path.join(frontEndPath, 'indextest2.html');
-  res.sendFile(indexPath);
+  const indextestPath = path.join(frontEndPath, 'indextest2.html');
+  res.sendFile(indextestPath);
 });
 
 app.get('/test', (req, res) => {
