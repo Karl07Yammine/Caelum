@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Nikea Sans";
+    src: url(Font/NIKEA.otf);
+}
+
 #container {
     position: relative;
     height: 100vh;
@@ -7,7 +12,7 @@
     align-items: center;
 }
 
-/* Karl img is not imaging very bad quality for backgrounds pls fix */
+
 img{
     width: 130%;
     object-fit: cover;
@@ -38,16 +43,15 @@ html{
     overflow: hidden;
 }
 
-/* Karl I was experimenting here on the sizes w khbar im not even sure nos hol properties eloun 3aze */
 h1 {
     font-size: 4rem;
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
-    /* transform: translateY(220px); */
+
 }
 
-/* kel shi under this is chatgpt ella el transform property fa barke el meshekle men waraha */
+
 .space-button {
     padding: 15px 30px;
     background: linear-gradient(145deg, #3d3d3d, #5d5d5d);
@@ -57,17 +61,16 @@ h1 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
     border: 2px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    /* transition: transform 0.3s ease, background 0.3s ease;
-    transform: translateY(280px); */
+
 }
 
-/* Hover effect for the button */
+
 .space-button:hover {
     scale: 1.1;
     background: linear-gradient(145deg, #5d5d5d, #8d8d8d);
 }
 
-/* Responsive Text and Button Size */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -76,4 +79,8 @@ h1 {
         font-size: 1.2rem;
         padding: 12px 25px;
     }
+}
+h1 {
+    font-family: "Nikea Sans";
+    font-size:3em;
 }

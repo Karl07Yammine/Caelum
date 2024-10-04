@@ -1,0 +1,129 @@
+@media (min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+* {
+    margin: 0;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.div-1 {
+    width: 200px;
+    height: 300px;
+    background-color:rgba(139, 139, 139, 0.7);
+}
+
+/* Style for the hamburger menu icon */
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Move hamburger icon to the right */
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-icon .bar {
+    width: 35px;
+    height: 5px;
+    background-color: grey;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Side navigation menu */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0; /* Make the side menu slide from the right */
+    background-color: rgba(25, 25, 50, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: -8px 0px 16px 0px rgba(0, 0, 0, 0.8);
+}
+
+.side-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #00ccff;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    left: 25px; /* Close button moves to the left */
+    font-size: 36px;
+    color: #fff;
+}
+
+.square-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #1b1b3a;
+    color: white;
+    border: 2px solid #4e4e99;
+    margin: 10px 30px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 153, 255, 0.6), inset 0 0 10px rgba(0, 153, 255, 0.3);
+    display:inline-block;
+    transition: 0.3s;
+}
+
+.square-btn:hover {
+    background-color: #2b2b78;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.8), inset 0 0 15px rgba(0, 204, 255, 0.6);
+}
+
+.feedback-btn {
+    background-color: #1b1b3a;
+    color: white;
+    padding: 10px 16px;
+    border: 2px solid #00ffcc;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.6), inset 0 0 10px rgba(0, 255, 204, 0.4);
+    display: block;
+    margin: 20px 30px;
+    transition: all 0.3s ease;
+}
+
+.feedback-btn:hover {
+    background-color: #33ffcc;
+    box-shadow: 0 0 25px rgba(0, 255, 204, 1), inset 0 0 15px rgba(0, 255, 204, 0.7);
+}
+
+.view-options span {
+    font-size: 16px;
+    color: #00ccff;
+    text-shadow: 0 0 10px rgba(0, 153, 255, 0.8);
+}
+
+.view-options {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
