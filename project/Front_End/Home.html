@@ -11,21 +11,32 @@
 </head>
 
 <body>
-    <div class="div-1">
-        <h2>Time:</h2>
-        <h2>Intensity:</h2>
-        <h2>Speed:</h2>
+
+    <div class="space-box">
+        <div class="data-section">
+            <div class="data-item">
+                <h3>Time:</h3>
+                <p id="time">00:00:00</p>
+            </div>
+            <div class="data-item">
+                <h3>Intensity:</h3>
+                <p id="intensity">0 dB</p>
+            </div>
+            <div class="data-item">
+                <h3>Speed:</h3>
+                <p id="speed">0 m/s</p>
+            </div>
+        </div>
     </div>
 
 
-    <!-- Hamburger menu icon -->
     <div class="menu-icon" onclick="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
 
-<!-- Side navigation -->
+
 <div id="side-menu" class="side-menu">
     <div class="view-options">
         <span style="font-family: Pixelated Sans">See other views</span>
