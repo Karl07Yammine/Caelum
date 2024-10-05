@@ -132,7 +132,7 @@
     position: relative;
     width: 100px;
     height:100px;
-    margin-left: 94px;
+    margin-left: 74px;
     margin-top: -130px;
 }
 
@@ -149,7 +149,7 @@
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 255, 204, 0.6), inset 0 0 10px rgba(0, 255, 204, 0.4);
     display: block;
-    margin: 2px 72px;
+    margin: -10px 52px;
     transition: all 0.3s ease;
 }
 
@@ -238,4 +238,28 @@ p {
 
 h3 {
     font-size: 17px;
+}
+
+.Play {
+    width: 110px;
+    height: 110px;
+}
+
+.Fast-Forward {
+    width: 110px;
+    height: 110px;
+}
+
+.Reverse {
+    width: 110px;
+    height: 110px;
+    transform: scaleX(-1);
+}
+
+.Controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 70px;
 }
