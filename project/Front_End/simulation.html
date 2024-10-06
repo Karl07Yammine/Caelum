@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Caelum - Home</title>
+        <link href="/css/simulation.css" rel="stylesheet">
+        <link rel="shortcut icon" type="x-icon" href="img/Caelum_Logo_Final_Final-removebg-preview.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="space-box">
+            <div class="data-section">
+                <div class="data-item">
+                    <h3>Time:</h3>
+                    <p id="time">02:45:23</p>
+                </div>
+                <div class="data-item">
+                    <h3>Density:</h3>
+                    <p id="Density"> 7.58 p/cm<sup>3</sup></p>
+                </div>
+                <div class="data-item">
+                    <h3>Speed:</h3>
+                    <p id="speed"> 891 km/h</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+
+        <div id="side-menu" class="side-menu">
+            <div class="view-options">
+                <span style="font-family: Pixelated Sans">See other views</span>
+                <button class="square-btn"><img class="Earth" src="/img/Pixel_Earth-removebg-preview.png"></button>
+                <button class="square-btn"><img class="Solar" src="/img/Solar_flare_with_border__1_-removebg-preview (1).png"></button>
+                <button class="square-btn"><img class="Aurora" src="/img/Aurora.png"></button>
+                <button class="square-btn"><img class="Space" src="/img/Space-time-2-removebg-preview.png"></button>
+            </div>
+            <a href="../feedback">
+            <button class="feedback-btn"><h2 style="font-size: 15px; font-family:Pixelated-Sans">Feedback</h2></button>
+            <img class="Comment" src="/img/Feedback.png"></a>
+        </div>
+
+        <video id="Anim" autoplay muted loop class="background-clip"> <source src="/img/anim.mp4">Your browser does not support the animation. Sorry</video>
+
+        <div class="Controls">
+            <img class="Reverse" id="back" src="/img/Fast-Forward.png" onclick="playBackward()">
+            <img class="Play" id="play" src="/img/pause.png" onclick="togglePlayPause()">
+            <img class="Fast-Forward" id="forward" src="/img/Fast-Forward.png" onclick="fastForward()">
+        </div>
+        
+        <script src="/simulation.js"></script>
+    </body>
+
+</html>
