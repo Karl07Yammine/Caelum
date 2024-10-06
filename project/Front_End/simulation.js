@@ -12,6 +12,7 @@ function toggleMenu() {
 var video = document.getElementById("Anim");
 var playPauseIcon = document.getElementById("play");
 
+video.playbackRate = 3.0;
 
 function togglePlayPause() {
     console.log("tried to play/pause")
@@ -27,7 +28,7 @@ function togglePlayPause() {
 }
 
 function fastForward() {
-  video.playbackRate = 2.0;  // Speed up video (2x)
+  video.playbackRate = 5.0;  // Speed up video (2x)
   setTimeout(function() {
     video.playbackRate = 1.0;  // Return to normal speed after 3 seconds
   }, 3000);
