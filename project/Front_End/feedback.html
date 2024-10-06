@@ -30,7 +30,7 @@
             console.log(items)
 
             const itemsContainer = document.getElementById('feedbacks');
-            items.forEach(item => {
+            items.reverse().forEach(item => {
                 const itemDiv = document.createElement('div');
                 itemDiv.classList.add('feedback');
                 itemDiv.classList.add('row');
