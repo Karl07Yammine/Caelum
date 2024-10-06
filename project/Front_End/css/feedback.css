@@ -1,0 +1,66 @@
+.feedback {
+        height: 8vh;
+        width: 100%;
+        background-color: #eeecec;
+        border-radius: 1.5rem;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+}
+
+.input {
+        width: 60%;
+        display: flex; /* Use flex to align input and button horizontally */
+        justify-content: center;
+        align-items: center;
+        gap: 0rem; /* Adds space between input and button */
+        margin: 0 auto;
+        margin-top: 1rem;
+        border-radius: 1.5rem;
+}
+
+input {
+        width: 79%;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 1.5rem 0 0 1.5rem;
+        outline: none;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+}
+
+input:focus {
+        border-color: #007bff;
+}
+
+button {
+        width: 20%;
+        margin: none;
+        padding: 10px 15px;
+        border-radius: 0 1.5rem 1.5rem 0;
+        margin-left: 0.1rem;
+        border: 2px solid #ccc;
+        background-color: white;
+}
+
+
+form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+
+
+body{
+        width: 100vw;
+        height: 100vh;
+        background: rgb(36,229,180);
+        background: linear-gradient(90deg, rgba(36,229,180,1) 0%, rgba(0,248,255,1) 33%, rgba(25,189,249,1) 66%, rgba(97,86,226,1) 100%);
+}
+
+.row{
+        box-shadow: 0.5rem 0.5rem rgba(56, 56, 56, 0.5);
+}

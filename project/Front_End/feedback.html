@@ -4,12 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Caelum - Feedback</title>
-  <link href="/css/feedback.css" rel="stylesheet">
   <link rel="shortcut icon" type="x-icon" href="img/Caelum_Logo_Final_Final-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="/css/feedback.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="container">
+    <form action="/feedback" method="post">
+      <div class="input row">
+        <input type="text" name="content" placeholder="Enter a feedback">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div class="feedbacks" id="feedbacks">
+    </div>
+  </div>
+  <script>
+    // Function to fetch items from the API and display them
+    async function fetchItems() {
+      console.log("trying fetch");
+        try {
+            const response = await fetch('/items');
+            const items = await response.json();
+            console.log(items)
 
+            const itemsContainer = document.getElementById('feedbacks');
+            items.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('feedback');
+                itemDiv.classList.add('row');
+                itemDiv.innerHTML = `<p>${item.content}</p>`;
+                itemsContainer.appendChild(itemDiv);
+            });
+        } catch (error) {
+            console.error('Error fetching items:', error);
+        }
+    }
+
+    // Call fetchItems when the page loads
+    window.onload = fetchItems;
+</script>
 </body>
 
 </html>
