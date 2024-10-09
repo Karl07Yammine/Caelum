@@ -34,10 +34,7 @@ app.get('/feedback', (req, res) => {
 
 
 
-mongoose.connect('mongodb+srv://yamminekarl:Karl@cluster0.cbkpp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect('mongodb+srv://yamminekarl:Karl@cluster0.cbkpp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
 
 const itemSchema = new mongoose.Schema({
